@@ -21,7 +21,6 @@ BACKUP_FOLDER = "backup"
 
 def backup_database():
     try:
-        # Vòng lặp
         for filename in os.listdir(DB_FOLDER):
             if filename.endswith(".sql") or filename.endswith(".sqlite3"):
                 file_path = os.path.join(DB_FOLDER, filename)
